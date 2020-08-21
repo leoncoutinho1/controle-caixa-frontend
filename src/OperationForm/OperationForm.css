@@ -1,0 +1,21 @@
+.OperationForm {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.OperationForm input, 
+.OperationForm select,
+.OperationForm button {
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+    width: 90%;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.OperationForm button {
+    width: 50%;
+}

@@ -1,0 +1,20 @@
+.OperationList {
+    margin: 0 auto;
+    width: 80%;
+}
+
+table {
+    width: 100%;
+}
+
+tr.c {
+    background-color: rgba(118, 247, 118, 0.555)
+}
+
+tr.d {
+    background-color: rgba(255, 45, 45, 0.445);
+}
+
+th, td {
+    padding: 5px;
+}
