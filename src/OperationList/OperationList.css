@@ -1,9 +1,10 @@
 .OperationList {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
 }
 
 table {
+    font-size: 10px;
     width: 100%;
 }
 
