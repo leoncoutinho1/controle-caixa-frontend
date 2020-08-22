@@ -17,7 +17,7 @@ export default class Operation extends Component {
     }
 
     refresh = () => {
-        axios.get(`${url}?sort=+createdAt&limit=5`)
+        axios.get(`${url}?sort=-createdAt&limit=5`)
             .then(res => this.setState({
                 list: res.data
             }))
@@ -39,6 +39,7 @@ export default class Operation extends Component {
         return (
             <>
                 <OperationForm
+                    refreshList={this.refresh}
                     handleAdd={this.handleAdd}
                     handleChange={this.handleChange}
                     handleRemove={this.handleRemove} />
