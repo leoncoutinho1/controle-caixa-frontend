@@ -22,7 +22,8 @@ export default props => {
             description: description,
             cashflow: cashflow,
             type: type,
-            value: value
+            value: value,
+            createdAt: Date.now() - 3*60*60*1000
         }
 
         props.handleAdd(operation)
