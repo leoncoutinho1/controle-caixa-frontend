@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 
 import Operation from '../Operation'
 import Summary from '../Summary'
@@ -11,6 +11,9 @@ export default props => (
         </Route>
         <Route path='/summary'>
             <Summary />
+        </Route>
+        <Route exact path='/'>
+            <Redirect to='/operation' />
         </Route>
     </Switch>
 )
