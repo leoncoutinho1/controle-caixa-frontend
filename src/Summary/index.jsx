@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import OperationList from '../OperationList'
+import './Summary.css'
 
 const url = process.env.REACT_APP_API_URL
 
@@ -45,17 +46,18 @@ export default class Summary extends Component {
 
     render() {
         return (
-            <>
+            <div className="SummaryForm">
                 <select name="inputCashFlow" id="inputCashFlow" value={this.state.flow} onChange={e => this.setCashFlow(e)}>
                     <option value="">-- Caixa --</option>
                     <option value="padaria">Padaria</option>
                     <option value="mercearia">Mercearia</option>
                     <option value="pessoal">Pessoal</option>
-                    <option value="*">Geral</option>
+                    <option value="unido">Geral-Unido</option>
+                    <option value="*">Todos</option>
                 </select>
                 <OperationList
                     list={this.state.list} />
-            </>
+            </div>
             
         )
     }

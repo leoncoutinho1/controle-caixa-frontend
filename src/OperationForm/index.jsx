@@ -39,6 +39,7 @@ export default props => {
                 <option value="padaria">Padaria</option>
                 <option value="mercearia">Mercearia</option>
                 <option value="pessoal">Pessoal</option>
+                <option value="unido">Geral-Unido</option>
             </select>
             <input type="number" name="inputValue" id="inputValue" placeholder="Valor" value={value} onChange={e => setValue(e.target.value)}/>
             <select name="inputType" id="inputType" value={type} onChange={e => setType(e.target.value)}>
