@@ -1,0 +1,7 @@
+.SummaryForm select {
+    border-radius: 5px;
+    background-color: rgb(224, 224, 224);
+    width: 30%;
+    font-size: 25px;
+    margin: 20px 0;
+}
